@@ -16,7 +16,7 @@ Generate Model
 
 Generate Seed
 
-``
+`npm run g:seed -- --name user`
 
 Migrate
 
