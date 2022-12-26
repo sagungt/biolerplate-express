@@ -35,5 +35,6 @@ db.sequelize = sequelize;
 db.Sequelize = Sequelize;
 
 db.ROLES = ['user', 'moderator', 'admin'];
+db.ORDER_STATUS = ['PAID', 'UNPAID'];
 
 module.exports = db;
