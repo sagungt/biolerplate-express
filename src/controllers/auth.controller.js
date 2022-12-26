@@ -25,10 +25,10 @@ exports.signup = async (req, res) => {
         },
       });
       await user.setRoles(userRoles);
-      res.respond({ message: 'User was registered successfully!' });
+      res.respond({ message: 'User was registered successfully!' }, 201);
     } else {
       await user.setRoles([1]);
-      res.respond({ message: 'User was registered successfully!' });
+      res.respond({ message: 'User was registered successfully!' }, 201);
     }
   } catch (error) {
     res.respond({ message: error.message }, 500);
